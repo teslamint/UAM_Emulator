@@ -1,8 +1,26 @@
 {
+    "name": "teslamint/uam_emulator",
+    "description": "A dead simple Universal Access Method emulator",
+    "keywords": ["emulator", "uam", "captive"],
+    "homepage": "https://github.com/teslamint/uam_emulator",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Jaehoon You",
+            "email": "teslamint@gmail.com",
+            "role": "Creator/Developer"
+        }
+    ],
     "require": {
-        "klein/klein": "v2.0.2"
+        "klein/klein": "^v2.0",
+        "roave/security-advisories": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "^v6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
     }
 }
